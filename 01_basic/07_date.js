@@ -26,13 +26,29 @@ let milliseconds = currentDate.getMilliseconds();
 
 //Formatting Dates
 
-console.log(currentDate.toLocaleString()); // Default format based on user's locale
+//console.log(currentDate.toLocaleString()); // Default format based on user's locale
 
 // Using moment.js for more formatting options
 // Example: npm install moment
-const moment = require('moment');
-console.log(moment(currentDate).format('MMMM Do YYYY, h:mm:ss a'));
+//const moment = require('moment');
+//console.log(moment(currentDate).format('MMMM Do YYYY, h:mm:ss a'));
 
 
+//Manupulating Dates
 
+currentDate.setFullYear(2022);
+currentDate.setMonth(5); // Month is zero-based (0 = January, 11 = December)
+currentDate.setDate(15);
 
+//console.log(currentDate.toLocaleString());
+
+//Working with Timestamps:
+//Timestamps in JavaScript are often represented in milliseconds since the Unix epoch (January 1, 1970). You can get and set timestamps using the getTime() and setTime() methods:
+
+let timeStamp = currentDate.getTime();
+console.log(timeStamp);
+
+let newDate = new Date();
+newDate.setTime(timeStamp);
+
+console.log(newDate);
