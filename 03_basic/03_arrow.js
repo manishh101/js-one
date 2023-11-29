@@ -31,6 +31,8 @@ const chai = () => {
 // const addTwo = (num1,num2) =>   num1 + num2
 // const addTwo = (num1,num2) =>  ( num1 + num2)//impliclit return
 const addTwo = (num1,num2) => ( {username:"manish"})
+const addTwo = (num1,num2) => ( {username:"manish"})
 
 
+console.log(addTwo(2,3));
 console.log(addTwo(2,3));
